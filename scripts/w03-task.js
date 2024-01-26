@@ -60,10 +60,10 @@ let memberCheck = document.getElementById('member');//.addEventListener('change'
     let subtotal = Number(document.getElementById('subtotal').value);
     if (memberCheck.checked){
         total = (subtotal * 0.8).toFixed(2)
-        document.getElementById('total').innerHTML = `$ ${total}`;
+        document.getElementById('total').innerHTML = `$${total}`;
     }else{
         total = subtotal.toFixed(2)
-        document.getElementById('total').innerHTML = `$ ${total}`;
+        document.getElementById('total').innerHTML = `$${total}`;
     }
 }
 
