@@ -1,6 +1,4 @@
-/* Universal Selector */
-
-
+/* HTML Selectors */
 
 body{
     font-family: arial;
@@ -70,16 +68,6 @@ nav ul {
 }
 
 nav ul li {
-    flex: 1 1 auto;
-}
-
-
-
-nav ul li:first-child a {
-    padding: 1px 10px;
-}
-
-nav ul li {
     display: none;
     list-style: none;
     margin: 10px;
@@ -138,6 +126,15 @@ footer {
     bottom: 0;
 }
 
+
+/* Class Selectors */
+.active {
+    border-bottom: 1px solid rgb(197, 197, 63);
+}
+
+.open li {
+    display: block;
+}
 
 
 /* Media Queries */
