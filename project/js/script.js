@@ -3,10 +3,6 @@ const search = document.getElementById("search");
 const search_result = document.getElementById("search_result");
 const id_nbr = document.getElementById("id_nbr");
 const names = document.getElementById("names");
-
-//const startuplab = document.getElementById("startuplab");
-//const startupval = document.getElementById("startupval");
-
 const startup = document.getElementById("startup");
 const nov2022 = document.getElementById("nov2022");
 const dec2022 = document.getElementById("dec2022");
@@ -29,7 +25,7 @@ const interest = document.getElementById("interest");
 function fetchData() {
     let idNumber = Number(idInput.value);
     if (idNumber == ""){
-        alert("Enter a member id number...")
+        alert("Type your member id number...")
     } else {
         //let dataSource = `json/Interest_2023.json`;  
         let dataSource = `https://run.mocky.io/v3/1c2dcabc-0552-4e86-b01e-948b8083bb06`;
@@ -81,7 +77,7 @@ function fetchData() {
         
     })
     .catch(() => {
-        alert('Invalid member id number...');
+        alert(`The "${idNumber}" is invalid! Please type a valid 10-digit member id number...`);
         location.reload();
     })
     }
