@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caisse d'Entraide IPRC-NGOMA</title>
+    <link rel="stylesheet" type="text/css" href="styles/project.css">
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="w01-task.html">W1 Task</a></li>
+          <li><a href="w03-task.html">W3 Task</a></li>
+          <li><a href="w04-task.html">W4 Task</a></li>
+          <li><a href="w05-task.html">W5 Task</a></li>
+          <li><a href="project.html" class="active">Project</a></li>
+        </ul>
+      </nav>
+      <header>
+        <h1>Caisse d'Entraide Savings & Interest 2023</h1>
+      </header>
+    <div class="container">
+        <div class="search-wrapper">
+            <input type="text" id="idInput" name="" placeholder="Enter Your Member ID Number Here...">
+            <button type="button" id="search">Search</button>
+        </div>
+        <div id="search_result">
+            <img src="" id="photo">  
+            <h1>Names: <span id="names"></span></h1>
+            <h2>Member ID: <span id="id_nbr"></span></h2>
+            <div>
+              <label id="startuplab"></label>
+              <input id="startupval" disabled>
+            </div>
+            <div>
+              <label id="nov2022"></label>
+              <input id="nov2022val" disabled></input>
+            </div>
+
+            <div>
+              <label id="dec2022"></label>
+              <input id="dec2022val" disabled></input>
+            </div>
+            <div>
+              <label id="jan2023"></label>
+              <input id="jan2023val" disabled></input>
+            </div>
+            <div>
+              <label id="feb2023"></label>
+              <input id="feb2023val" disabled></input>
+            </div>
+            <div>
+              <label id="mar2023"></label>
+              <input id="mar2023val" disabled></input>
+            </div>
+            <div>
+              <label id="apr2023"></label>
+              <input id="apr2023val" disabled></input>
+            </div>
+            <div>
+              <label id="may2023"></label>
+              <input id="may2023val" disabled></input>
+            </div>
+            <div>
+              <label id="jun2023"></label>
+              <input id="jun2023val" disabled></input>
+            </div>
+            <div>
+              <label id="jul2023"></label>
+              <input id="jul2023val" disabled></input>
+            </div>
+            <div>
+              <label id="aug2023"></label>
+              <input id="aug2023val" disabled></input>
+            </div>
+            <div>
+              <label id="sep2023"></label>
+              <input id="sep2023val" disabled></input>
+            </div>
+            <div>
+              <label id="oct2023"></label>
+              <input id="oct2023val" disabled></input>
+            </div>
+            <div>
+              <label id="total"></label>
+              <input id="totalval" disabled></input>
+            </div>
+            <div>
+              <label id="withdraw"></label>
+              <input id="withdrawval" disabled></input>
+            </div>
+            <div>
+              <label id="balance"></label>
+              <input id="balanceval" disabled></input>
+            </div>
+            <div>
+              <label id="interest"></label>
+              <input id="interestval" disabled></input>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        &copy;<span id="year"></span> | CAISSE D'ENTRAIDE | SAVINGS & INTEREST
+      </footer>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script type="text/javascript" src="scripts/project.js"></script>
+</body>
+
+</html>
